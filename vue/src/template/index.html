@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= (htmlWebpackPlugin.options.config.title) %></title>
+</head>
+<body>
+<% if(htmlWebpackPlugin.options.config.header) { %>
+<script>console.log('header')</script>
+<% } %>
+
+<div id="vue-app">
+  <img src="<%= require('./loading.gif') %>"  alt="">
+</div>
+<% if(htmlWebpackPlugin.options.config.header) { %>
+<script>console.log('footer')</script>
+<% } %>
+<div>sdsdsd1112211</div>
+<script src="<%= htmlWebpackPlugin.options.tinyPath %>/tinymce/tinymce.min.js"></script>
+<!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+
+</body>
+</html>
